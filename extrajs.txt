@@ -1,0 +1,66 @@
+
+
+const screennumber = document.querySelector(".number")
+const screennumbernext = document.querySelector(".numbernext")
+const plus = document.getElementById("add")
+const minus = document.getElementById("subtract")
+const multiply = document.getElementById("mult")
+const divide = document.getElementById("divi")
+const CE = document.getElementById("reset")
+const equal= document.getElementById("equal")
+const numberbtn = document.querySelector(".numberbutton")
+// const zero = document.querySelector(".zero")
+// const one  = document.querySelector(".one")
+// const two  = document.querySelector(".two")
+// const three= document.querySelector(".three")
+// const four  = document.querySelector(".four")
+// const five  = document.querySelector(".five")
+// const six   = document.querySelector(".six")
+// const seven = document.querySelector(".seven")
+// const eight = document.querySelector(".eight")
+// const nine  = document.querySelector(".nine")
+let initialnumber = 0
+
+plus.addEventListener("click",function(){
+    screennumber.textContent += "+"
+})
+
+
+
+minus.addEventListener("click",function(){
+    screennumber.textContent += "-"
+})
+
+
+
+
+multiply.addEventListener("click",function(){
+    screennumber.textContent += "*"
+})
+
+
+
+
+
+divide.addEventListener("click",function(){
+    screennumber.textContent += "/"
+})
+
+
+
+
+CE.addEventListener("click",function(){
+initialnumber = ""
+screennumber.textContent = initialnumber
+})
+
+
+
+equal.addEventListener("click",function(){
+    
+})
+
+numberbtn.addEventListener("click",function(){
+    
+    screennumber.textContent = screennumber.value
+})
